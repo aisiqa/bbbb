@@ -1,8 +1,8 @@
 name: Refresh
 on:
-  # 从 0 点 30 分开始每一个小时刷新一次
+  # 从 0 点 25 分开始每半小时刷新一次
   schedule:
-    - cron: "30 */1 * * *"
+    - cron: "25,55 * * * *"
   workflow_dispatch:
 
 concurrency:
