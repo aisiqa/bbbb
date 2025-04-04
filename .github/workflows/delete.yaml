@@ -1,7 +1,7 @@
 name: Delete
 on:
   schedule:
-    - cron: "17 0 */2 * *"
+    - cron: "11 0 * * *"
 
 jobs:
   del_runs:
@@ -12,4 +12,4 @@ jobs:
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_days: 4
+          retain_days: 2
